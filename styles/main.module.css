@@ -1,0 +1,309 @@
+.slider_section {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 100px;
+    padding: 0 !important;
+}
+
+.block__information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.block__information div {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin-right: -200px;
+    margin-bottom: -60px;
+}
+
+.block__information p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 200;
+    width: 150px;
+}
+
+.block__information h2 {
+    font-size: 1.4rem;
+    width: 370px;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+
+.block__information img {
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Переопределяем стили для слайдера */
+.slider {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 1;
+}
+
+.swiper {
+    width: 100vw !important;
+    height: 400px !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+}
+
+.slideImage {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+}
+
+/* Скрываем навигацию */
+.swiper :global(.swiper-button-next),
+.swiper :global(.swiper-button-prev) {
+    display: none !important;
+}
+
+.swiper :global(.swiper-pagination) {
+    bottom: 10px !important;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+    background: #fff;
+}
+
+/* Убираем отступы между слайдами */
+.swiper :global(.swiper) {
+    --swiper-theme-color: #fff !important;
+    --swiper-pagination-bullet-size: 8px !important;
+    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.swiper :global(.swiper-slide) {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.section__form{
+    width: 100vw;
+    height: 500px;
+    background-image: url('/images/form-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.form_container {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(0.50px);
+    -webkit-backdrop-filter: blur(0.50px);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form_title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form_field {
+    margin-bottom: 25px;
+}
+
+.form_field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form_field input, .form_field select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form_button {
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    padding: 15px 131px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Центрирование кнопки */
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.form_button:hover {
+    background-color: #008053;
+}
+
+.form_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form_button_prev,
+.form_button_next {
+  background-color: #00A86B;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form_button_prev:hover,
+.form_button_next:hover {
+  background-color: #008053;
+}
+
+.form_field_checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form_field_checkbox input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.form_field_checkbox label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.form_button_pay,
+.form_button_register {
+  background-color: #00A86B;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.form_button_pay:hover,
+.form_button_register:hover {
+  background-color: #008053;
+}
+
+.success_message {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success_icon {
+  margin-bottom: 20px;
+}
+
+.success_message h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #00A86B;
+}
+
+.success_message p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.newsletter_section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.newsletter_form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.qr{
+  margin: 10px auto;
+  display: flex;
+}
+
+.newsletter_form .form_field {
+  margin-bottom: 20px;
+}
+
+.newsletter_form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.newsletter_form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+}
+
+.newsletter_form input:focus {
+  border-bottom: 2px solid #00A86B;
+}
+
+.newsletter_button {
+  width: 100%;
+  background-color: #00A86B;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.newsletter_button:hover {
+  background-color: #008053;
+}

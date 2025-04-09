@@ -1,0 +1,119 @@
+.routes {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.routeTabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+  
+}
+
+.tabButton {
+  background: none;
+  border: none;
+  padding: 10px 30px;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.tabButton:hover {
+  color: #333;
+}
+
+.tabButton.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.tabButton.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00A86B;
+}
+
+.routeCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.routeCard {
+  width: 100%;
+  max-width: 430px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.cardImage {
+  width: 50%;
+  position: relative;
+}
+
+.routeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  width: 50%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.routeTitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.routeInfo {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.detailsButton {
+  margin-top: auto;
+  display: inline-block;
+  background-color: #00A86B;
+  color: white;
+  padding: 8px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.detailsButton:hover {
+  background-color: #008053;
+}
+
+.routeDate {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 20px;
+} 
