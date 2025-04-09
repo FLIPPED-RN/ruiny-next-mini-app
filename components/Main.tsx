@@ -305,14 +305,15 @@ export default function Main() {
             <h2 style={{textAlign: 'center'}}>Информация</h2>
             <div className={styles.block__information}>
                 <div>
-                    <h2>le grandi cose, come lepiccole,tutto ci appassiona.</h2>
-                    <p>ti diremo che faremo delle cose, <br /> e poi le faremo</p>
+                    <h2>Привет! «Хранители руин»</h2>
+                    <p>Каждые выходные мы проводим интересные субботники-перфомансы на ценных исторических памятниках.</p>
                 </div>
                 <Image
                     src="/images/image-information.png"
                     alt="Изображение"
-                    width={250}
-                    height={250}
+                    width={200}
+                    height={200}
+                    className={styles.image_information}
                 />
             </div>
         </section>
@@ -368,7 +369,7 @@ export default function Main() {
                     
                     {formStep === 1 && (
                       <button type="submit" className={styles.form_button}>
-                        Далее &gt;
+                        Далее
                       </button>
                     )}
                 </form>

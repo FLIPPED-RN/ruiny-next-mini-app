@@ -19,19 +19,24 @@
     position: relative;
     z-index: 2;
     max-width: 600px;
-    margin-right: -200px;
+    margin-right: -250px;
     margin-bottom: -60px;
 }
 
+.image_information{
+  position: relative;
+  top: 10px;
+}
+
 .block__information p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
     font-weight: 200;
     width: 150px;
 }
 
 .block__information h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 370px;
     font-weight: 200;
     letter-spacing: 0.05em;
@@ -95,7 +100,7 @@
 
 .section__form{
     width: 100vw;
-    height: 500px;
+    height: 600px;
     background-image: url('/images/form-background.png');
     background-size: cover;
     background-position: center;
@@ -114,7 +119,9 @@
     backdrop-filter: blur(0.50px);
     -webkit-backdrop-filter: blur(0.50px);
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -162,6 +169,7 @@
     margin: 0 auto; /* Центрирование кнопки */
     transition: background-color 0.3s;
     font-weight: 500;
+    width: 100%;
 }
 
 .form_button:hover {
