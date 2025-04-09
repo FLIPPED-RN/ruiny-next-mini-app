@@ -270,7 +270,6 @@ export default function Main() {
                   className={styles.success_icon}
                 />
                 <h3>Успешная запись!</h3>
-                <p>Ваша заявка принята. Ожидайте подтверждения.</p>
                 <button 
                   type="button" 
                   className={styles.form_button}
